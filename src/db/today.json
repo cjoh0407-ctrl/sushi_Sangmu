@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "/img/today/1.jpg",
+        "title": "새로운 시작을 응원합니다",
+        "description": "새로운 출발을 상무초밥이 응원합니다"
+    },
+    {
+        "id": 2,
+        "image": "/img/today/2.jpg",
+        "title": "종이학 접기 이벤트",
+        "description": "상무초밥 종이학 접기 이벤트에 참여하세요"
+    },
+    {
+        "id": 3,
+        "image": "/img/today/3.jpg",
+        "title": "점주 교육 프로그램",
+        "description": "체계적인 점주 교육으로 품질을 유지합니다"
+    },
+    {
+        "id": 4,
+        "image": "/img/today/4.jpg",
+        "title": "서울대입구역점 오픈",
+        "description": "서울대입구역점 오픈 이벤트 진행 중"
+    },
+    {
+        "id": 5,
+        "image": "/img/today/5.jpg",
+        "title": "상무스페셜초밥",
+        "description": "신선한 재료로 만든 상무초밥 대표 메뉴"
+    },
+    {
+        "id": 6,
+        "image": "/img/today/6.jpg",
+        "title": "수험생 응원 이벤트",
+        "description": "수능을 마친 수험생들을 위한 특별 이벤트"
+    },
+    {
+        "id": 7,
+        "image": "/img/today/7.jpg",
+        "title": "키미카레우동",
+        "description": "치킨카라아게와 함께하는 특별한 우동 메뉴"
+    },
+    {
+        "id": 8,
+        "image": "/img/today/8.jpg",
+        "title": "연어초밥",
+        "description": "일본 정통 기법으로 만든 신선한 연어초밥"
+    },
+    {
+        "id": 9,
+        "image": "/img/today/9.jpg",
+        "title": "정성스러운 상차림",
+        "description": "가족과 함께하는 행복한 식사 시간"
+    }
+]

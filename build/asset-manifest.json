@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sushi_Sangmu/static/css/main.1228051e.css",
+    "main.js": "/sushi_Sangmu/static/js/main.8fb1275a.js",
+    "index.html": "/sushi_Sangmu/index.html",
+    "main.1228051e.css.map": "/sushi_Sangmu/static/css/main.1228051e.css.map",
+    "main.8fb1275a.js.map": "/sushi_Sangmu/static/js/main.8fb1275a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1228051e.css",
+    "static/js/main.8fb1275a.js"
+  ]
+}
