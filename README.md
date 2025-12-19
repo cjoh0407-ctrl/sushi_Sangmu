@@ -12,7 +12,7 @@
 ## 메뉴 페이지
 ![page2](ppt_img/5.JPG)
 ## 상세 페이지
-![page3](ppt_img/2.JPG)
+![page3](ppt_img/6.JPG)
 ## 장바구니
 ![page4](ppt_img/7.JPG)
 ## 게시판
