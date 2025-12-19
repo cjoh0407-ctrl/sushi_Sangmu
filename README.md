@@ -1,1 +1,1 @@
-![Title](sushi_Sangmu ppt/1.jpg)
+![Title](sushi_Sangmu_jpg/1.jpg)
