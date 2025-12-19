@@ -31,10 +31,7 @@
   font-style: normal;
 }
 
-.App{
-  margin: 0;
-  padding: 0;
-}
+
 
 
 body {
@@ -77,7 +74,7 @@ body {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: vmin;
   pointer-events: none;
 }
 
@@ -89,7 +86,7 @@ body {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,6 +126,7 @@ body {
 
 .swiper-slide {
   background-color: #2c2c2c; /* 이미지가 로드되기 전 번쩍임을 방지합니다 */
+  margin-top: 30px;
 }
 
 .slider-text-overlay {
@@ -141,6 +139,7 @@ body {
     color: #2c2c2c;
     font-family: 'NanumSquare', sans-serif;
   font-weight: 700; /* Bold 굵기 적용 */
+  
     
 }
 
@@ -446,5 +445,5 @@ body {
 /* 헤더 이미지 */
 .header-image {
   width: 30%;
-  margin: 50px;
+  margin: 20px;
 }

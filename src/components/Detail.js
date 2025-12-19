@@ -65,52 +65,98 @@ function Detail() {
 
 
     return (
-        <div className="container">
+        <div className="container" style={{marginTop:50}}>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6" style={{ position: 'relative' }}>
+                    {/* 이미지 */}
                     <img src={image} width="100%" alt={name} />
+                    
+                    {/* 이전 메뉴 버튼 - 왼쪽에 배치 */}
+                    <button 
+                        onClick={handlePrevClick}
+                        disabled={currentIndex === 0}
+                        style={{
+                            position: 'absolute',
+                            left: '20px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            padding: '15px 20px',
+                            fontSize: '1.5rem',
+                            cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
+                            opacity: currentIndex === 0 ? 0.4 : 0.8,
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '50%',
+                            width: '40px',
+                            height: '40px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                            if (currentIndex !== 0) {
+                                e.target.style.opacity = '1';
+                                e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                            }
+                        }}
+                        onMouseLeave={(e) => {
+                            if (currentIndex !== 0) {
+                                e.target.style.opacity = '0.8';
+                                e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                            }
+                        }}
+                    >
+                        ←
+                    </button>
+
+                    {/* 다음 메뉴 버튼 - 오른쪽에 배치 */}
+                    <button 
+                        onClick={handleNextClick}
+                        disabled={currentIndex === allProductIds.length - 1}
+                        style={{
+                            position: 'absolute',
+                            right: '20px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            padding: '15px 20px',
+                            fontSize: '1.5rem',
+                            cursor: currentIndex === allProductIds.length - 1 ? 'not-allowed' : 'pointer',
+                            opacity: currentIndex === allProductIds.length - 1 ? 0.4 : 0.8,
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '50%',
+                            width: '40px',
+                            height: '40px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                            if (currentIndex !== allProductIds.length - 1) {
+                                e.target.style.opacity = '1';
+                                e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                            }
+                        }}
+                        onMouseLeave={(e) => {
+                            if (currentIndex !== allProductIds.length - 1) {
+                                e.target.style.opacity = '0.8';
+                                e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                            }
+                        }}
+                    >
+                        →
+                    </button>
                 </div>
+                
                 <div className="col-md-6">
                     <h5 className="pt-5" style={{ fontSize: '2rem', padding: 30}}>{name}</h5>
                     <p style={{ fontSize: '1.1rem', fontWeight: 'light', color: '#504c4cff'}}>{description}</p>
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold', padding: 10 }}>{price.toLocaleString()}원</p>
                     
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px', marginBottom: '30px' }}>
-                        <button 
-                            onClick={handlePrevClick}
-                            disabled={currentIndex === 0}
-                            style={{
-                                padding: '10px 20px',
-                                fontSize: '1.0rem',
-                                cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
-                                opacity: currentIndex === 0 ? 0.5 : 1,
-                                backgroundColor: '#6c757d',
-                                color: 'white',
-                                border: 'none',
-                                borderRadius: '5px'
-                            }}
-                        >
-                            ← 이전 메뉴
-                        </button>
-
-                        <button 
-                            onClick={handleNextClick}
-                            disabled={currentIndex === allProductIds.length - 1}
-                            style={{
-                                padding: '10px 20px',
-                                fontSize: '1.0rem',
-                                cursor: currentIndex === allProductIds.length - 1 ? 'not-allowed' : 'pointer',
-                                opacity: currentIndex === allProductIds.length - 1 ? 0.5 : 1,
-                                backgroundColor: '#6c757d',
-                                color: 'white',
-                                border: 'none',
-                                borderRadius: '5px'
-                            }}
-                        >
-                            다음 메뉴 →
-                        </button>
-                    </div>
-
                     {/* 주문하기 버튼 */}
                     <button className="btn btn-danger"
                         variant="primary"
@@ -132,7 +178,7 @@ function Detail() {
                         주문하기
                     </button>
                     <Link to="/cart" >
-                        <Button variant="success" style={{ fontSize: '1.2rem' }}>  주문상품 확인하기 </Button>
+                        <Button variant="success" style={{ fontSize: '1.2rem' }}>주문상품 확인하기</Button>
                     </Link>
                 </div>
             </div>
