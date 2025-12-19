@@ -1,6 +1,6 @@
-## 온라인 주문 플랫폼
-# https://cjoh0407-ctrl.github.io/sushi_Sangmu/
+### https://cjoh0407-ctrl.github.io/sushi_Sangmu/
 
+## 온라인 주문 플랫폼
 ![Title](sushi_Sangmu_jpg/1.JPG)
 ## 프로젝트 개요
 ![info](sushi_Sangmu_jpg/2.JPG)
